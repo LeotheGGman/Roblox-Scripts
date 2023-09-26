@@ -4,7 +4,7 @@ local hookmetamethod = hookmetamethod or function(tbl, mt, func) return hookfunc
 
 repeat wait() until game:IsLoaded();
  --> LeotheGGman? He is a good guy. Sadly that he decided to publish all his codes and scripts.
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LeotheGGman/ParkourModded10xCombo/main/TabUI.lua"))();
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LeotheGGman/Roblox-Scripts/main/Parkour/IGNORE%20THIS/TabUI.lua"))();
 local players = game:GetService("Players");
 local replicatedStorage = game:GetService("ReplicatedStorage");
 local scriptContext = game:GetService("ScriptContext");
