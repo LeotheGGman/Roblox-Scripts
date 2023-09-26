@@ -1,6 +1,8 @@
-
 adminlist = {"hudzell","ggggggggg8027","leotheggman"} --> Change these to your roblox names
 texture = ""
+
+---------------------------------HERE ARE SOME ADMIN COMMANDS THAT I PULLED FROM THE PARKOURS ROBLOX STUDIO-----------------------------------------------
+
 
 --[[
 commands
