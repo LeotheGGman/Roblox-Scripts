@@ -1,10 +1,8 @@
 local getupvalue = (getupvalue or debug.getupvalue);
 local getmetatable = (debug.getmetatable or getrawmetatable);
 local hookmetamethod = hookmetamethod or function(tbl, mt, func) return hookfunction(getrawmetatable(tbl)[mt], func) end;
-
 repeat wait() until game:IsLoaded();
-
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LeotheGGman/ParkourModded10xCombo/main/TabUI.lua"))();
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LeotheGGman/Roblox-Scripts/main/Parkour/IGNORE%20THIS/TabUI.lua"))();
 local players = game:GetService("Players");
 local replicatedStorage = game:GetService("ReplicatedStorage");
 local scriptContext = game:GetService("ScriptContext");
@@ -25,6 +23,14 @@ do
         "t";
         "FF";
     };
+--> From Leo: It took me 6 years to play Parkour. It was such a nice time doing that! Bans, appeals, levels, updates... Years went through. 
+--> And whats now? Well, I left game. I tried playing modded parkour, but... owners were sucks. I also tried to create my own parkour modded (find in my bio in roblox, nickname: ggggggggg8027)
+--> Now i got older, and got other things to do. But im also waiting for Parkour Reborn. And will play that game a lot, at least i hope so ;D
+--> Also look for other scripts that i have for parkour. Like bag ESP, its been undetected for 6 years, i think its safe to use it! :)
+--> Time went... So fast?
+--> And the last thing i want to say: Have fun using my scripts! Also feel free to contact me on discord: leotheggman
+--> Have a nice day... or night. I hope that you will succeed in your life and will send me couple bucks for that fun that my scripts gave you! ;D
+--> See you on the other side, my dear friend!
     local nc;
     nc = hookmetamethod(game, "__namecall", newcclosure(function(self, ...)
         local args = {...};
@@ -79,6 +85,11 @@ local moves = {
     "springboard";
 };
 local parkour = library:CreateWindow("By LeotheGGman");
+
+parkour:AddToggle({
+    text = "No Fall Damage";
+    flag = "god_mode";
+});
 parkour:AddToggle({
     text = "Maxed Combo";
     flag = "maxed_combo";
@@ -98,4 +109,20 @@ parkour:AddToggle({
         end;
     end;
 });
+
+parkour:AddToggle({
+    text = "Always Flow";
+    flag = "always_flow";
+    callback = function(enabled)
+        if (not enabled) then return end;
+
+        while library.flags.always_flow do
+            variables.flowActive = true;
+            variables.flowDelta = 100;
+            wait();
+        end;
+    end;
+});
 library:Init();
+--> We are making Parkour history. WE ARE PARKOUR!
+--> The end.
