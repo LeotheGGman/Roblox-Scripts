@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LeotheGGman/Roblox-Scripts/main/Slow%20auto-farm%20points.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LeotheGGman/Roblox-Scripts/main/Parkour/IGNORE%20THIS/ComboMaster.lua"))()
