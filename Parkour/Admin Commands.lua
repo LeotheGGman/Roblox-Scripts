@@ -3,13 +3,6 @@ adminlist = {"hudzell","ggggggggg8027","leotheggman"} --> Change these to your r
 texture = ""
 
 --[[
- I update this command script alot, so if you want to get the newest version of the script, go to http://www.roblox.com/Item.aspx?ID=5277383 every once in a while.
-
-If theres anything you think this command script needs, just message me (hudzell) and i might put it in. :)
-And also, if you find any bugs, report them to me.
-
-The commands are,
-
 commands
 Shows a list of all the commands
 
