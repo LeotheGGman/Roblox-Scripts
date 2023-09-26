@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LeotheGGman/Roblox-Scripts/main/Parkour/Cheat%20Menu/Functions%20and%20other%20stuff.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LeotheGGman/Roblox-Scripts/main/Parkour/IGNORE%20THIS/Cheat%20Menu%20main.lua"))()
