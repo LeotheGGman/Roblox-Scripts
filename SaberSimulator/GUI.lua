@@ -44,7 +44,7 @@ local Library = {
 		ExoNight = {
 			Main = Color3.fromRGB(51, 102, 0),
 			Secondary = Color3.fromRGB(0, 0, 0),
-			Tertiary = Color3.fromRGB(51, 0, 0),
+			Tertiary = Color3.fromRGB(102, 0, 102),
 
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
@@ -414,22 +414,22 @@ function Library:create(options)
 	}
 
 	if readfile and writefile and isfile then
-		if not isfile("MercurySettings.json") then
-			writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
+		if not isfile("LeotheGGman.json") then
+			writefile("LeotheGGman.json", HTTPService:JSONEncode(settings))
 		end
-		settings = HTTPService:JSONDecode(readfile("MercurySettings.json"))
+		settings = HTTPService:JSONDecode(readfile("LeotheGGman.json"))
 		Library.CurrentTheme = Library.Themes[settings.Theme]
 		updateSettings = function(property, value)
 			settings[property] = value
-			writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
+			writefile("LeotheGGman.json", HTTPService:JSONEncode(settings))
 		end
 	end
 
 	options = self:set_defaults({
-		Name = "Mercury",
+		Name = "LeotheGGman",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "https://github.com/deeeity/mercury-lib"
+		Link = "https://github.com/LeotheGGman"
 	}, options)
 
 	if getgenv and getgenv().MercuryUI then
