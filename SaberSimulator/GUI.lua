@@ -414,19 +414,19 @@ function Library:create(options)
 	}
 
 	if readfile and writefile and isfile then
-		if not isfile("LeotheGGman.json") then
-			writefile("LeotheGGman.json", HTTPService:JSONEncode(settings))
+		if not isfile("MercurySettings.json") then
+			writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
 		end
-		settings = HTTPService:JSONDecode(readfile("LeotheGGman.json"))
+		settings = HTTPService:JSONDecode(readfile("MercurySettings.json"))
 		Library.CurrentTheme = Library.Themes[settings.Theme]
 		updateSettings = function(property, value)
 			settings[property] = value
-			writefile("LeotheGGman.json", HTTPService:JSONEncode(settings))
+			writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
 		end
 	end
 
 	options = self:set_defaults({
-		Name = "LeotheGGman",
+		Name = "Mercury",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = "https://github.com/LeotheGGman"
