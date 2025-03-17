@@ -41,7 +41,7 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		Night = {
+		Night1 = {
 			Main = Color3.fromRGB(153, 0, 153),
 			Secondary = Color3.fromRGB(0, 0, 0),
 			Tertiary = Color3.fromRGB(102, 0, 102),
