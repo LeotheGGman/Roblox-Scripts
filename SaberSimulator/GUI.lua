@@ -410,7 +410,7 @@ end
 function Library:create(options)
 
 	local settings = {
-		Theme = "Night"
+		Theme = "EcoNight"
 	}
 
 	if readfile and writefile and isfile then
