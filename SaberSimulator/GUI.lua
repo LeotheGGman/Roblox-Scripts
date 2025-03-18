@@ -41,7 +41,7 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		EcoNight = {
+		GreenNight = {
 			Main = Color3.fromRGB(51, 102, 0),
 			Secondary = Color3.fromRGB(64, 54, 54),
 			Tertiary = Color3.fromRGB(51, 102, 0),
@@ -426,15 +426,15 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = "Mercury",
+		Name = "LeotheGGman",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = "https://github.com/LeotheGGman"
 	}, options)
 
-	if getgenv and getgenv().MercuryUI then
-		getgenv():MercuryUI()
-		getgenv().MercuryUI = nil
+	if getgenv and getgenv().LeotheGGmanUI then
+		getgenv():LeotheGGmanUI()
+		getgenv().LeotheGGmanUI = nil
 	end
 
 
@@ -583,7 +583,7 @@ function Library:create(options)
 	end
 
 	if getgenv then
-		getgenv().MercuryUI = closeUI
+		getgenv().LeotheGGmanUI = closeUI
 	end
 
 	closeButton.MouseButton1Click:connect(function()
