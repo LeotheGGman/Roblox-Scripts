@@ -426,21 +426,25 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = "LeotheGGman",
+		Name = "Mercury",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = "https://github.com/LeotheGGman"
 	}, options)
 
-	if getgenv and getgenv().LeotheGGmanUI then
-		getgenv():LeotheGGmanUI()
-		getgenv().LeotheGGmanUI = nil
+	if getgenv and getgenv().MercuryUI then
+		getgenv():MercuryUI()
+		getgenv().MercuryUI = nil
 	end
 
 
 
 	if options.Link:sub(-1, -1) == "/" then
 		options.Link = options.Link:sub(1, -2)
+	end
+
+	if options.Theme.Light then
+		self.darken, self.lighten = self.lighten, self.darken
 	end
 
 	self.CurrentTheme = options.Theme
@@ -579,7 +583,7 @@ function Library:create(options)
 	end
 
 	if getgenv then
-		getgenv().LeotheGGmanUI = closeUI
+		getgenv().MercuryUI = closeUI
 	end
 
 	closeButton.MouseButton1Click:connect(function()
