@@ -443,10 +443,6 @@ function Library:create(options)
 		options.Link = options.Link:sub(1, -2)
 	end
 
-	if options.Theme.Dark then
-		self.darken, self.lighten = self.lighten, self.darken
-	end
-
 	self.CurrentTheme = options.Theme
 
 	local gui = self:object("ScreenGui", {
