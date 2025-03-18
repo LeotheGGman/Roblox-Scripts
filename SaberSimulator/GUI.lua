@@ -41,10 +41,10 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		Dark = {
-			Main = Color3.fromRGB(30, 30, 35),
-			Secondary = Color3.fromRGB(50, 50, 55),
-			Tertiary = Color3.fromRGB(70, 130, 180),
+		Night = {
+			Main = Color3.fromRGB(51, 102, 0),
+			Secondary = Color3.fromRGB(64, 54, 54),
+			Tertiary = Color3.fromRGB(51, 102, 0),
 
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
@@ -410,7 +410,7 @@ end
 function Library:create(options)
 
 	local settings = {
-		Theme = "Dark"
+		Theme = "Night"
 	}
 
 	if readfile and writefile and isfile then
@@ -429,7 +429,7 @@ function Library:create(options)
 		Name = "Mercury",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "https://github.com/deeeity/mercury-lib"
+		Link = "https://github.com/LeotheGGman"
 	}, options)
 
 	if getgenv and getgenv().MercuryUI then
@@ -913,10 +913,7 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "Abstract", Description = "UI Library Developer", Discord = "Abstract#8007", V3rmillion = "AbstractPoo"}
-	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
-	creditsTab:credit{Name = "Repository", Description = "UI Library Repository", Github="https://github.com/deeeity/mercury-lib/blob/master/src.lua"}
-
+	creditsTab:credit{Name = "LeotheGGman", Description = "Owner, Developer, Designer", Discord = "leotheggman"}
 	return mt
 end
 
